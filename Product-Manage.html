@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Manage Products</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="assets/css/img-prw-upd.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block"> </span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+
+
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.png" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Sumit Sharma</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Sumit Sharma</h6>
+
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+
+
+
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-box-seam"></i><span>Products </span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="Product-Create.html">
+              <i class="bi bi-circle"></i><span>Create</span>
+            </a>
+          </li>
+          <li>
+            <a href="Product-Manage.html">
+              <i class="bi bi-circle"></i><span>Manage</span>
+            </a>
+          </li>
+
+        </ul>
+      </li><!-- End Components Nav -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="User-Details.html">
+          <i class="bi bi-person"></i>
+          <span>User Details</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Orders.html">
+          <i class="bi bi-menu-button-wide"></i>
+          <span>Order Details</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Cart.html">
+          <i class="bi bi-cart-fill"></i>
+          <span>Cart</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#cityarea-nav" data-bs-toggle="collapse" href="#">
+          <i class="bx bxs-map"></i><span>City Area </span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="cityarea-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="Create-Area.html">
+              <i class="bi bi-circle"></i><span>Create</span>
+            </a>
+          </li>
+          <li>
+            <a href="Manage-Area.html">
+              <i class="bi bi-circle"></i><span>Manage</span>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Address.html">
+          <i class="bx bxs-map-alt"></i>
+          <span>Address</span>
+        </a>
+      </li>
+      <!-- End Components Nav -->
+
+
+
+
+
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+  <!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Manage Products</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Manage Products</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+
+    <section class="section dashboard">
+      <div class="row">
+        <!-- Top Selling -->
+        <div class="col-12">
+          <div class="card  top-selling overflow-auto">
+
+
+
+            <div class="card-body pb-0">
+              <h5 class="card-title">Manage Your Products</h5>
+
+              <table
+                class="table table-borderless table datatable  table-striped table-bordered table-light table-hover"
+                id="dtHorizontalExample" cellspacing="0" width="100%">
+                <thead>
+                  <tr>
+                    <th scope="col">SNO</th>
+                    <th scope="col">P ID</th>
+                    <th scope="col">CATEGORY</th>
+                    <th scope="col">P NAME</th>
+                    <th scope="col">PIECES</th>
+                    <th scope="col">WEIGHT</th>
+                    <th scope="col">PRICE</th>
+                    <th scope="col">PROTEIN</th>
+                    <th scope="col">CALORIES</th>
+                    <th scope="col">POTASSIUM</th>
+                    <th scope="col">CALCIUM</th>
+                    <th scope="col">IRON</th>
+                    <th scope="col">CARBOHYDRATES</th>
+                    <th scope="col">DESCRIPTION</th>
+                    <th scope="col">P IMAGE</th>
+                    <th scope="col">ACTION</th>
+
+
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mohit Kumar</td>
+                    <td> 55</td>
+                    <td>abc@gmail.com</td>
+                    <td>123456</td>
+                    <td>Male</td>
+                    <td>22/01/1995</td>
+                    <td>Sirhind</td>
+                    <td>abc@gmail.com</td>
+                    <td>123456</td>
+                    <td>Male</td>
+                    <td>22/01/1995</td>
+                    <td>Sirhind</td>
+                    <td>Bassi Pathana</td>
+                    <td scope="row"><a href="#"><img src="assets/img/product-1.jpg" alt=""></a></td>
+                    <td class="justify-item-center">
+
+
+
+                      <a class="btn btn-outline-primary btn-sm margin_bottom" title="Edit" data-toggle="tooltip"
+                        data-bs-toggle="modal" data-bs-target="#modal_manage_product"><i class="ri-edit-2-fill"></i>
+                      </a>
+
+
+
+                      <a class="btn btn-outline-primary btn-sm" title="Delete" data-toggle="tooltip"
+                        data-bs-toggle="modal" data-bs-target="#confirm_modal"> <i class="ri-delete-bin-5-fill"></i></a>
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Gohit Kumar</td>
+                    <td> 5</td>
+                    <td>abc@gmail.com</td>
+                    <td>123456</td>
+                    <td>Male</td>
+                    <td>22/01/1995</td>
+                    <td>BSirhind</td>
+                    <td>Bassi Pathana</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Hohit Kumar</td>
+                    <td>1</td>
+                    <td>abc@gmail.com</td>
+                    <td>123456</td>
+                    <td>Male</td>
+                    <td>22/01/1995</td>
+                    <td>CSirhind</td>
+                    <td>Bassi Pathana</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <!-- End Table with stripped rows -->
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <!-- Modal Dialog Scrollable -->
+
+
+    <div class="modal fade" id="modal_manage_product" tabindex="-1">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Edit Your Product</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+
+
+            <h5 class="card-title">Enter Product Details</h5>
+
+            <!-- General Form Elements -->
+            <form>
+              <div class="row mb-3">
+                <label for="inputText" class="col-sm-2 col-form-label"> Product Id </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputText" class="col-sm-2 col-form-label"> Category </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputText" class="col-sm-2 col-form-label"> Product Name </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputText" class="col-sm-2 col-form-label"> Pieces </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputText" class="col-sm-2 col-form-label"> Weight </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputText" class="col-sm-2 col-form-label"> Price </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputText" class="col-sm-2 col-form-label"> Protein </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputText" class="col-sm-2 col-form-label"> Calories </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputText" class="col-sm-2 col-form-label"> Potassium </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputText" class="col-sm-2 col-form-label"> Calcium </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputText" class="col-sm-2 col-form-label"> Iron </label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputText" class="col-sm-2   col-form-label"> Carbohydrates </label>
+                <div class="col-sm-10  ">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Description</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" style="height: 100px"></textarea>
+                </div>
+              </div>
+              <!-- <div class="row mb-3">
+                <label for="inputNumber" class="col-sm-2 col-form-label">Product Image</label>
+                <div class="col-sm-10">
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+              </div> -->
+
+
+              <div class="row mb-3">
+                <label for="inputNumber" class="col-sm-2 col-form-label">Product Image:</label>
+                <div class="col-sm-10">
+                  <div class="profile-pic-wrapper">
+                    <div class="pic-holder">
+                      <!-- uploaded pic shown here -->
+                      <img id="profilePic" class="pic" src="https://source.unsplash.com/random/150x150">
+
+                      <Input class="uploadProfileInput " type="file" name="profile_pic" id="ProductImage"
+                        accept="image/*" />
+                      <label for="ProductImage" class="upload-file-block">
+                        <div class="text-center">
+                          <div class="mb-2">
+                            <i class="fa fa-camera fa-2x"></i>
+                          </div>
+                          <div class="text-uppercase">
+                            Update <br /> Product Photo
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+
+                    </hr>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputNumber" class="col-sm-2 col-form-label">Category Image:</label>
+                <div class="col-sm-10">
+                  <div class="profile-pic-wrapper">
+                    <div class="pic-holder">
+                      <!-- uploaded pic shown here -->
+                      <img id="CategoryImg" class="pic" src="https://source.unsplash.com/random/150x150">
+
+                      <Input class="uploadProfileInput " type="file" name="profile_pic" id="CategoryImgInput"
+                        accept="image/*" />
+                      <label for="CategoryImgInput" class="upload-file-block">
+                        <div class="text-center">
+                          <div class="mb-2">
+                            <i class="fa fa-camera fa-2x"></i>
+                          </div>
+                          <div class="text-uppercase">
+                            Update <br /> Product Photo
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+
+                    </hr>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="row mb-3 justify-content-center">
+                <div class="alert alert-success alert-dismissible fade show col-8 text-center" role="alert">
+                  Successfully Saved<button type="button" class="btn-close" data-bs-dismiss="alert"
+                    aria-label="Close"></button>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="row mb-3">
+
+                <div class="col-sm-10 text-center ">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary"> Submit </button>
+
+                </div>
+
+              </div>
+
+            </form><!-- End General Form Elements -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </div><!-- End Modal Dialog Scrollable-->
+
+
+    <!-- Modal Delete start -->
+
+    <div class="modal fade" id="confirm_modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-scrollable modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Confirm your action</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+
+
+            <h5 class="card-title text-center">Do you really want to delete this?</h5>
+
+
+          </div>
+          <div class="row mb-3 justify-content-center">
+
+            <div class="col-sm-10 text-center ">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+              <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"> Yes </button>
+
+            </div>
+
+          </div>
+          <!-- Modal Delete ends -->
+
+
+          </form><!-- End General Form Elements -->
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span> </span></strong>. All Rights Reserved
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/img_prw_upld.js"></script>
+
+
+</body>
+
+</html>
